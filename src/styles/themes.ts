@@ -1,5 +1,46 @@
 import { Colors } from 'src/interfaces/interface';
 
+export const availableThemes = [
+    'default',
+    'github',
+    'github-light',
+    'github-compact',
+    'github-dark',
+    'github-dark-dimmed',
+    'dracula',
+    'gruvbox',
+    'gotham',
+    'rogue',
+    'xcode',
+    'radical',
+    'coral',
+    'react',
+    'react-dark',
+    'nord',
+    'lucent',
+    'chartreuse-dark',
+    'minimal',
+    'material-palenight',
+    'green',
+    'noctis-minimus',
+    'one-dark',
+    'monokai',
+    'elegant',
+    'aqua',
+    'synthwave-84',
+    'merko',
+    'vue',
+    'vue-dark',
+    'tokyo-day',
+    'tokyo-night',
+    'high-contrast',
+    'cobalt',
+    'material',
+    'nightowl',
+    'modern-lilac',
+    'arctic',
+] as const;
+
 export const selectColors = (queryString: string): Colors => {
     switch (queryString) {
         case 'github':
@@ -281,6 +322,16 @@ export const selectColors = (queryString: string): Colors => {
                 areaColor: '41b883',
                 borderColor: 'ffffff',
                 bgColor: '2c3e50',
+                color: '41b883',
+                titleColor: '41b883',
+                lineColor: '41b883',
+                pointColor: 'f6f8fa',
+            };
+        case 'vue-dark':
+            return {
+                areaColor: '41b883',
+                borderColor: 'ffffff',
+                bgColor: '1e1e1e',
                 color: '41b883',
                 titleColor: '41b883',
                 lineColor: '41b883',
